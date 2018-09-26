@@ -1,0 +1,7 @@
+{
+  "name": "pmbMobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
