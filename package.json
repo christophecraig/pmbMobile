@@ -4,7 +4,7 @@
   "author": "Christophe Craig",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node api.js"
   },
   "dependencies": {
     "express": "^4.16.3",

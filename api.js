@@ -21,6 +21,7 @@ app.get('/authors', (req, res) => {
     results.forEach(row => {
       authors.push(row)
     })
+    res.header("Access-Control-Allow-Origin", "*")
     res.send(JSON.stringify(authors))
   })
 })
