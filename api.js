@@ -33,6 +33,14 @@ app.get('/author/:id', (req, res) => {
   })
 })
 
+app.get('/record/:id', (req, res) => {
+  connection.query('SELECT * FROM notices WHERE notice_id = ' + req.params.id, function(error, results) {
+    if (error) throw error
+    res.header("Access-Control-Allow-Origin", "*")
+    res.send(JSON.stringify(results[0]))
+  })
+})
+
 
 
 app.listen(3000)
